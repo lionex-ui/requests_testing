@@ -35,7 +35,7 @@ class Global(Main):
                 expected=status_code
             )
         else:
-            TypeError("Unsupported type of status_code")
+            raise TypeError("Unsupported type of status_code")
 
         return self.main
 
